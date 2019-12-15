@@ -1,0 +1,199 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>个人静态博客部署 | Gridea</title>
+<meta name="description" content="温故而知新" />
+<link rel="shortcut icon" href="https://github.com/carisfeng2015/carisfeng2015.github.io/favicon.ico?v=1576376300261">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://github.com/carisfeng2015/carisfeng2015.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://github.com/carisfeng2015/carisfeng2015.github.io">
+  <img class="avatar" src="https://github.com/carisfeng2015/carisfeng2015.github.io/images/avatar.png?v=1576376300261" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              个人静态博客部署
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-12-15
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="githubpage">GithubPage</h1>
+<p>1）注册 github 账号<br>
+用户名： carisfeng2015<br>
+邮箱：7334789@qq.com<br>
+密码：boco_13456<br>
+创建[username].github.io 仓库<br>
+https://[username].github.io/[filename]<br>
+博客地址：https://github.com/carisfeng2015/carisfeng2015.github.io</p>
+<p>部署思路：</p>
+<ul>
+<li>在本地使用Markdown完成内容创作</li>
+<li>使用Hexo输出静态网页文件（html, js, css, …）</li>
+<li>将上述静态文件上传到github仓库中</li>
+<li>然后就可以通过[username].github.io访问博客了<br>
+2）Hexo</li>
+<li>安装 Node.js</li>
+<li>安装 Hexo</li>
+</ul>
+<ol>
+<li>安装Hexo：$ npm install hexo-cli -g 。如果提示权限问题则使用sudo运行。</li>
+<li>选择一个目录作为博客目录，使用命令$ hexo init blog初始化博客系统</li>
+<li>切换到博客目录下安装依赖：$ cd blog &amp;&amp; npm install</li>
+<li>启动预览服务器：$ hexo s，在浏览器中访问localhost:4000，如果一切正常就可以看到博客页面了<br>
+根目录下的_config.yml是Hexo的配置文件，可以按照个人喜好修改博客的配置。</li>
+</ol>
+<ul>
+<li>$ hexo init [name]: 初始化博客系统</li>
+<li>$ hexo s/$ hexo server：启动预览服务器。服务器启动后在浏览器中访问localhost:4000预览博客内容</li>
+<li>$ hexo new [name]: 新建一篇以[name]为标题的博文，博文保存在/source/_posts目录下</li>
+<li>$ hexo new [layout] [name]: 新建layout类型的文章</li>
+<li>$ hexo g/$ hexo generate：生成静态文件</li>
+<li>$ hexo d/$ hexo deploy: 按_config.yml的配置部署</li>
+<li>$ hexo g -d: 生成静态文件后部署</li>
+<li>$ hexo clean：清除静态文件缓存</li>
+</ul>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#githubpage">GithubPage</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://github.com/carisfeng2015/carisfeng2015.github.io/post/hello-gridea">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://github.com/carisfeng2015/carisfeng2015.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>

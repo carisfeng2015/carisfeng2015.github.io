@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://github.com/carisfeng2015/carisfeng2015.github.io</id>
+    <title>Gridea</title>
+    <updated>2019-12-15T02:37:07.011Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://github.com/carisfeng2015/carisfeng2015.github.io"/>
+    <link rel="self" href="https://github.com/carisfeng2015/carisfeng2015.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://github.com/carisfeng2015/carisfeng2015.github.io/images/avatar.png</logo>
+    <icon>https://github.com/carisfeng2015/carisfeng2015.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2019, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[个人静态博客部署]]></title>
+        <id>https://github.com/carisfeng2015/carisfeng2015.github.io/post/ge-ren-jing-tai-bo-ke-bu-shu</id>
+        <link href="https://github.com/carisfeng2015/carisfeng2015.github.io/post/ge-ren-jing-tai-bo-ke-bu-shu">
+        </link>
+        <updated>2019-12-15T02:08:05.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="githubpage">GithubPage</h1>
+<p>1）注册 github 账号<br>
+用户名： carisfeng2015<br>
+邮箱：7334789@qq.com<br>
+密码：boco_13456<br>
+创建[username].github.io 仓库<br>
+https://[username].github.io/[filename]<br>
+博客地址：https://github.com/carisfeng2015/carisfeng2015.github.io</p>
+<p>部署思路：</p>
+<ul>
+<li>在本地使用Markdown完成内容创作</li>
+<li>使用Hexo输出静态网页文件（html, js, css, …）</li>
+<li>将上述静态文件上传到github仓库中</li>
+<li>然后就可以通过[username].github.io访问博客了<br>
+2）Hexo</li>
+<li>安装 Node.js</li>
+<li>安装 Hexo</li>
+</ul>
+<ol>
+<li>安装Hexo：$ npm install hexo-cli -g 。如果提示权限问题则使用sudo运行。</li>
+<li>选择一个目录作为博客目录，使用命令$ hexo init blog初始化博客系统</li>
+<li>切换到博客目录下安装依赖：$ cd blog &amp;&amp; npm install</li>
+<li>启动预览服务器：$ hexo s，在浏览器中访问localhost:4000，如果一切正常就可以看到博客页面了<br>
+根目录下的_config.yml是Hexo的配置文件，可以按照个人喜好修改博客的配置。</li>
+</ol>
+<ul>
+<li>$ hexo init [name]: 初始化博客系统</li>
+<li>$ hexo s/$ hexo server：启动预览服务器。服务器启动后在浏览器中访问localhost:4000预览博客内容</li>
+<li>$ hexo new [name]: 新建一篇以[name]为标题的博文，博文保存在/source/_posts目录下</li>
+<li>$ hexo new [layout] [name]: 新建layout类型的文章</li>
+<li>$ hexo g/$ hexo generate：生成静态文件</li>
+<li>$ hexo d/$ hexo deploy: 按_config.yml的配置部署</li>
+<li>$ hexo g -d: 生成静态文件后部署</li>
+<li>$ hexo clean：清除静态文件缓存</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://github.com/carisfeng2015/carisfeng2015.github.io/post/hello-gridea</id>
+        <link href="https://github.com/carisfeng2015/carisfeng2015.github.io/post/hello-gridea">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="http://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>
